@@ -57,7 +57,7 @@ if(live==='no'||live==='n')
 }
 
 
-let age =prompt.toLowerCase()(username+' AM I older than 60 years old?').toLowerCase();
+let age =prompt(username+' AM I older than 60 years old?').toLowerCase();
 console.log(age);
 //stud.toLowerCase();
 if(age==='yes'|| age==='y')
