@@ -68,19 +68,16 @@ if(age==='no'||age==='n')
 {
   alert('thats ture '+ username+ 'i hope i can reach this age in good health  ');
 }
-
-
-
 let ready=prompt('Now , we will play the guessing game number , are you ready ?').toLowerCase();
 console.log(ready);
+
 //let array
 let counting=0;
 let numb=0;
 for(let i=0 ; counting<=4 ; i++)
 {
   if (ready==='yes'|| ready==='y'){
-
-    let numb=prompt ('As I mentioned '+username+' I want you to play guessing game number, so choose a number');
+    numb=prompt ('As I mentioned '+username+' I want you to play guessing game number, so choose a number');
     console.log(numb);
   }
 
@@ -91,12 +88,14 @@ for(let i=0 ; counting<=4 ; i++)
   if (numb >= 20){
     alert('too high');
     numb=prompt('thats wrong answer try a lower number');
+    console.log(numb);
     counting++;
   }
 
   if(numb <= 10){
     alert('too low');
     numb=prompt('thats wrong answer try a higher number');
+    console.log(numb);
     counting++;
   }
 }
