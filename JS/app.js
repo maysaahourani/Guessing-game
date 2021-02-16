@@ -47,11 +47,11 @@ if(drink==='no'|| drink==='n')
 let live =prompt(username+' AM I from JORDAN ?').toLowerCase();
 console.log(drink);
 //stud.toLowerCase();
-if(live===('yes'||'y'))
+if(live==='yes'||live==='y')
 {
   alert ('YES thats sure '+ username+' JORDAN FIRST');
 }
-if(live===('no'||'n'))
+if(live==='no'||live==='n')
 {
   alert('O.o '+username);
 }
@@ -60,11 +60,11 @@ if(live===('no'||'n'))
 let age =prompt.toLowerCase()(username+' AM I older than 60 years old?').toLowerCase();
 console.log(age);
 //stud.toLowerCase();
-if(age===('yes'||'y'))
+if(age==='yes'|| age==='y')
 {
   alert ('WHAT THE HELL'+ username+' go and drink your coffee');
 }
-if(age===('no'||'n'))
+if(age==='no'||age==='n')
 {
   alert('thats ture '+ username+ 'i hope i can reach this age in good health  ');
 }
