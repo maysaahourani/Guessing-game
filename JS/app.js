@@ -70,11 +70,11 @@ if(age==='no'||age==='n')
 }
 
 function numberGuess () {
-  let number = Math.floor(Math.random() * 100 + 1); // Generates a random number between 0 and 100
+  let number = Math.floor(Math.random() * 10 + 1); // Generates a random number between 0 and 100
 
   let totalGuesses = []; // Array to stores all the guesses
   let guess = Number(prompt('Welcome to number guess!  Guess a number between 1 and 100')); // Prompts guessor to guess first number
-  while (guess !== number && totalGuesses.length<=4) { //loop runs while user has not guessed the number
+  while ((guess !== number) && (totalGuesses.length<=4)) { //loop runs while user has not guessed the number
 
     if (!guess) { // User cancels prompts
       return;
@@ -85,11 +85,11 @@ function numberGuess () {
     else {
       totalGuesses.push(guess);
       if (guess > number) {
-        guess = prompt ('Your number is too high.  Try Again.  Dont give up!');
+        guess = prompt (' too high.  Try Again.  Dont give up!');
       }
 
       else {
-        guess = prompt ('Your number is too low.  Try Again.  I know you can do it!');
+        guess = prompt (' too low.  Try Again.  I know you can do it!');
       }
     }
   }
