@@ -70,10 +70,10 @@ if(age==='no'||age==='n')
 }
 
 function numberGuess () {
-  let number = Math.floor(Math.random() * 10 + 1); // Generates a random number between 0 and 100
+  let number = Math.floor(Math.random() * 10 + 1); 
 
   let totalGuesses = []; // Array to stores all the guesses
-  let guess = Number(prompt('Welcome to number guess!  Guess a number between 1 and 100')); // Prompts guessor to guess first number
+  let guess = number(prompt('Welcome to number guess!  Guess a number between 1 and 10')); // Prompts guessor to guess first number
   while ((guess !== number) && (totalGuesses.length<=4)) { //loop runs while user has not guessed the number
 
     if (!guess) { // User cancels prompts
