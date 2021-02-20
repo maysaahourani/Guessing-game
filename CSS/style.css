@@ -10,20 +10,41 @@ body{
 }
 h1{font-size:30px;}
 
-img{width:200px;
-    height:150px;
+#movie{width: 300px;
+    height: 450px;
+    align-items: stretch;
+
 }
 
-li:nth-child(odd){
+
+ul li:nth-child(odd){
 color:aqua;
 font-style: italic;
 background-color: slategray;
 
 }
 
-li:nth-child(even){
+ul li:nth-child(even){
     color:royalblue;
     background-color: tomato;
+
+}
+ol li:nth-child(odd){
+    margin-bottom:inherit;
+    padding-right: initial;
+    border-color: red;
+    content: icon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 2px;
+    background-color: sandybrown;
+
+}
+ol li:nth-child(even){
+    color: red;
+    background-color: lightsalmon;
+    content: icon;
+    margin-top: 4px;
+    border-color: lawngreen;
 
 }
 
